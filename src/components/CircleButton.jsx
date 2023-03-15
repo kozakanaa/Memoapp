@@ -1,14 +1,13 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { string, shape } from 'prop-types';
-import { Feather } from '@expo/vector-icons';
+import Icon from './Icon';
 
 export default function CircleButton(props) {
   const { style, name } = props;
   return (
     <View style={[styles.circleButtom, style]}>
-      <Feather name={name} size={32} color="white" />
+      <Icon name ={name} size ={40} color="white" />
     </View>
   );
 }
